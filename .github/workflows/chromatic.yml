@@ -1,0 +1,28 @@
+name: 'Chromatic Deployment'
+
+# Run this workflow on every push to the main branch and pull requests targeting the main branch
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2 # Checks-out your repository under $GITHUB_WORKSPACE
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Chromatic
+        uses: chromaui/action@v1 # This is the Chromatic GitHub Action
+        with:
+          # Provide NPM_TOKEN if your project requires authentication to install private packages
+          # token: ${{ secrets.NPM_TOKEN }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }} # Set your Chromatic project token here
+          # Add any Chromatic CLI options here
+          # buildScriptName: 'build-storybook' # Name of the npm script that builds your Storybook
+          # exitZeroOnChanges: true # Optional: Exit with 0 instead of 1 if there are changes
+          # autoAcceptChanges: true # Optional: Automatically accept all changes in the base branch (use with caution)
