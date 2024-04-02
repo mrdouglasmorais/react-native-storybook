@@ -43,4 +43,7 @@ To update the stories one time
 yarn update-stories
 ```
 
+Publish with chromatic:
+[click](https://660bd583438decc51c946920-ckhwkclqqf.chromatic.com/?path=/story/components-mybutton--basic){:target="_blank"}
+
 ## By: Douglas Morais

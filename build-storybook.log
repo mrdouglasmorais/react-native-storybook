@@ -1,0 +1,35 @@
+yarn run v1.22.22
+$ storybook build --output-dir /var/folders/zc/_3n28kfd3js487zf8ts8rnsw0000gn/T/chromatic--9512-uma0tN1lw8R3
+@storybook/cli v8.0.5
+
+info => Cleaning outputDir: ../../../../var/folders/zc/_3n28kfd3js487zf8ts8rnsw0000gn/T/chromatic--9512-uma0tN1lw8R3
+info => Loading presets
+info => Building manager..
+info => Manager built (74 ms)
+info => Building preview..
+info Addon-docs: using MDX3
+info => Using implicit CSS loaders
+Using @react-native/babel-preset
+info => Using default Webpack5 setup
+info Using tsconfig paths for react-docgen
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   997.a3182b07.iframe.bundle.js (716 KiB)
+WARN   76.f8bdaffd.iframe.bundle.js (628 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (728 KiB)
+WARN       runtime~main.02bc1289.iframe.bundle.js
+WARN       997.a3182b07.iframe.bundle.js
+WARN       main.44222a4a.iframe.bundle.js
+WARN 
+info => Preview built (6.16 s)
+info => Output directory: /var/folders/zc/_3n28kfd3js487zf8ts8rnsw0000gn/T/chromatic--9512-uma0tN1lw8R3
+
+attention => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://storybook.js.org/telemetry
+
+Done in 7.58s.
